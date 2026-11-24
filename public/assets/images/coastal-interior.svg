@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">The living pavilion, Vanguard Residence</title>
+  <desc id="desc">Stylised interior rendering of a warm minimalist living room with oak floors, limestone walls and full-height glass facing the ocean.</desc>
+  <defs>
+    <linearGradient id="view" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ea8a9"/>
+      <stop offset=".45" stop-color="#c7c2b4"/>
+      <stop offset=".58" stop-color="#7e989a"/>
+      <stop offset="1" stop-color="#a8b7b2"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#bcae98"/>
+      <stop offset=".6" stop-color="#d6c9b4"/>
+      <stop offset="1" stop-color="#c5b7a1"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a17649"/>
+      <stop offset=".55" stop-color="#8b6239"/>
+      <stop offset="1" stop-color="#5f4227"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e7d5b9"/>
+      <stop offset=".6" stop-color="#f1e3ca"/>
+      <stop offset="1" stop-color="#cfd8d0"/>
+    </linearGradient>
+    <radialGradient id="light" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffe6bb" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#ffe6bb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx=".5" cy=".45" r=".8">
+      <stop offset=".45" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#211a12" stop-opacity=".55"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".05"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#d9cdba"/>
+  <!-- ceiling -->
+  <path d="M0 0 H1600 V210 L0 190 Z" fill="#e7ddcc"/>
+  <path d="M0 190 L1600 210 V238 L0 220 Z" fill="#c9bba5"/>
+  <!-- floor -->
+  <path d="M0 720 L1600 740 V1000 H0 Z" fill="url(#floor)"/>
+  <g stroke="#6d4c2c" stroke-width="2" opacity=".4">
+    <path d="M0 772 L1600 792"/><path d="M0 836 L1600 856"/><path d="M0 910 L1600 930"/><path d="M0 982 L1600 998"/>
+  </g>
+
+  <!-- side walls -->
+  <path d="M0 0 L0 1000 L100 1000 L120 210 L100 0 Z" fill="#b6a78f"/>
+  <path d="M1600 0 L1600 1000 L1500 1000 L1490 212 L1510 0 Z" fill="#c9bba4"/>
+
+  <!-- window wall -->
+  <rect x="130" y="212" width="1340" height="530" fill="url(#view)"/>
+  <!-- horizon -->
+  <rect x="130" y="500" width="1340" height="8" fill="#798f8f" opacity=".7"/>
+  <g stroke="#e7dcc7" stroke-width="1.5" opacity=".4">
+    <path d="M130 540 H1470"/><path d="M130 580 H1470"/><path d="M130 624 H1470"/><path d="M130 672 H1470"/>
+  </g>
+  <ellipse cx="1040" cy="492" rx="240" ry="34" fill="#ffe6bd" opacity=".5" filter="url(#soft)"/>
+  <!-- headland -->
+  <path d="M130 500 C220 462 320 470 400 500 L410 742 L130 742 Z" fill="#5e6a5e" opacity=".65"/>
+  <path d="M1250 500 C1320 474 1400 480 1470 504 L1470 742 L1255 742 Z" fill="#657061" opacity=".5"/>
+
+  <!-- mullions -->
+  <g fill="#2f3532">
+    <rect x="130" y="212" width="12" height="530"/><rect x="440" y="212" width="10" height="530"/><rect x="760" y="212" width="10" height="530"/>
+    <rect x="1080" y="212" width="10" height="530"/><rect x="1458" y="212" width="12" height="530"/>
+    <rect x="130" y="212" width="1340" height="14"/><rect x="130" y="728" width="1340" height="14"/>
+    <rect x="230" y="212" width="5" height="530" opacity=".55"/><rect x="560" y="212" width="5" height="530" opacity=".55"/>
+    <rect x="900" y="212" width="5" height="530" opacity=".55"/><rect x="1230" y="212" width="5" height="530" opacity=".55"/>
+  </g>
+  <ellipse cx="620" cy="470" rx="420" ry="180" fill="url(#light)" opacity=".6"/>
+
+  <!-- sheer curtain -->
+  <path d="M130 212 H260 V742 H130 Z" fill="#f2e8d8" opacity=".25"/>
+  <g stroke="#fff6e8" stroke-width="2" opacity=".3">
+    <path d="M150 212 V742"/><path d="M180 212 V742"/><path d="M210 212 V742"/><path d="M240 212 V742"/>
+  </g>
+
+  <!-- ceiling line / recessed lighting -->
+  <g stroke="#f7e9ce" stroke-width="3" opacity=".8">
+    <path d="M300 206 H1460"/><path d="M300 206 V186" opacity=".5"/>
+  </g>
+
+  <!-- stone wall panel -->
+  <rect x="1160" y="300" width="300" height="440" fill="#cbbba4"/>
+  <g stroke="#b3a48b" stroke-width="1.4" opacity=".75">
+    <path d="M1160 380 H1460"/><path d="M1160 460 H1460"/><path d="M1160 540 H1460"/><path d="M1160 620 H1460"/>
+    <path d="M1240 300 V740"/><path d="M1320 300 V740"/><path d="M1400 300 V740"/>
+  </g>
+
+  <!-- rug -->
+  <path d="M380 792 L1240 812 L1320 960 L300 940 Z" fill="#c9bda8"/>
+  <path d="M410 806 L1215 824 L1280 942 L336 924 Z" fill="none" stroke="#b3a58d" stroke-width="3"/>
+
+  <!-- sofa -->
+  <g>
+    <rect x="470" y="742" width="500" height="118" rx="10" fill="#ded3c0"/>
+    <rect x="470" y="720" width="500" height="42" rx="10" fill="#e7ddca"/>
+    <rect x="462" y="760" width="40" height="110" rx="8" fill="#d5c9b5"/>
+    <rect x="938" y="760" width="40" height="110" rx="8" fill="#d5c9b5"/>
+    <rect x="470" y="856" width="500" height="24" fill="#a9967d"/>
+    <rect x="500" y="880" width="12" height="34" fill="#3e3325"/><rect x="928" y="880" width="12" height="34" fill="#3e3325"/>
+    <rect x="560" y="742" width="140" height="96" rx="8" fill="#d3c7b2" opacity=".8"/>
+    <rect x="750" y="742" width="120" height="96" rx="8" fill="#d8ccb7" opacity=".7"/>
+    <rect x="610" y="752" width="54" height="54" rx="4" fill="#7c6a52" opacity=".6"/>
+    <rect x="790" y="752" width="46" height="46" rx="4" fill="#8d7a61" opacity=".55"/>
+  </g>
+
+  <!-- coffee table -->
+  <ellipse cx="790" cy="900" rx="210" ry="52" fill="#2c2620" opacity=".18"/>
+  <rect x="610" y="852" width="330" height="22" rx="4" fill="#b39a7b"/>
+  <rect x="610" y="874" width="330" height="10" fill="#8e775c"/>
+  <rect x="640" y="884" width="10" height="46" fill="#4b3b2a"/><rect x="900" y="884" width="10" height="46" fill="#4b3b2a"/>
+  <rect x="710" y="836" width="42" height="16" fill="#f1e6d2"/>
+  <rect x="832" y="840" width="16" height="12" fill="#b7a687"/>
+
+  <!-- armchair -->
+  <g>
+    <rect x="1090" y="772" width="150" height="100" rx="8" fill="#cdbfa8"/>
+    <rect x="1090" y="748" width="150" height="36" rx="8" fill="#d9cbb5"/>
+    <rect x="1090" y="868" width="10" height="36" fill="#3e3325"/><rect x="1230" y="868" width="10" height="36" fill="#3e3325"/>
+  </g>
+
+  <!-- floor lamp -->
+  <rect x="1400" y="520" width="5" height="360" fill="#3a352d"/>
+  <ellipse cx="1402" cy="516" rx="52" ry="26" fill="#f6e1bd" opacity=".85"/>
+  <ellipse cx="1402" cy="520" rx="120" ry="80" fill="url(#light)" opacity=".7"/>
+
+  <!-- pendant -->
+  <g>
+    <path d="M980 0 V250" stroke="#7c766a" stroke-width="2"/>
+    <path d="M930 290 q50 -60 100 0 z" fill="#8d7c63"/>
+    <ellipse cx="980" cy="292" rx="48" ry="12" fill="#e9d1a6"/>
+    <circle cx="980" cy="300" r="8" fill="#ffe9c4"/>
+  </g>
+
+  <!-- planting -->
+  <g>
+    <rect x="300" y="640" width="60" height="100" fill="#8d7a60"/>
+    <g stroke="#435040" stroke-width="3" fill="none">
+      <path d="M330 640 q-30 -80 -60 -110"/><path d="M330 640 q20 -90 60 -120"/><path d="M330 640 q-2 -70 6 -120"/>
+    </g>
+    <g fill="#4d5c49"><ellipse cx="270" cy="526" rx="28" ry="14"/><ellipse cx="392" cy="516" rx="30" ry="15"/><ellipse cx="338" cy="506" rx="24" ry="13"/></g>
+  </g>
+
+  <!-- artwork -->
+  <rect x="1130" y="330" width="260" height="330" fill="#d8cbb6"/>
+  <rect x="1150" y="350" width="220" height="290" fill="#c2b39b"/>
+  <path d="M1150 596 C1220 520 1280 560 1370 470 L1370 640 L1150 640 Z" fill="#8e9a8b" opacity=".7"/>
+  <path d="M1150 620 C1230 570 1310 610 1370 540 L1370 640 L1150 640 Z" fill="#6f7d70" opacity=".8"/>
+  <rect x="1160" y="356" width="200" height="274" fill="none" stroke="#b09f85" stroke-width="6"/>
+
+  <rect width="1600" height="1000" fill="url(#vignette)"/>
+  <rect width="1600" height="1000" filter="url(#grain)" opacity=".65"/>
+</svg>

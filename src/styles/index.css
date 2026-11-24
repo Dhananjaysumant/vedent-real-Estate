@@ -1,0 +1,48 @@
+@import './tokens.css';
+@import './base.css';
+@import './components.css';
+@import './nav.css';
+@import './footer.css';
+@import './hero.css';
+@import './home.css';
+@import './story.css';
+@import './three.css';
+@import './pages.css';
+@import './concierge.css';
+
+/* ——— Application-level layout ————————————————— */
+.route-view {
+  animation: route-in 0.7s var(--ease-out);
+}
+
+@keyframes route-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+[id] {
+  scroll-margin-top: calc(var(--nav-h) + 1.25rem);
+}
+
+#main-content:focus {
+  outline: none;
+}
+
+.site-main {
+  min-height: 60vh;
+}
+
+/* Ensure the fixed header never obscures a focused element at the top of a page. */
+:target {
+  scroll-margin-top: calc(var(--nav-h) + 1.25rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-view {
+    animation: none;
+  }
+}

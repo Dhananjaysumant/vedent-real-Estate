@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">The Highlands Estate in an alpine meadow</title>
+  <desc id="desc">Stylised architectural rendering of a modern stone and timber house beneath snow-dusted mountains at blue hour.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3c4a58"/>
+      <stop offset=".45" stop-color="#7f8b93"/>
+      <stop offset=".8" stop-color="#c7b7a3"/>
+      <stop offset="1" stop-color="#e3d3bd"/>
+    </linearGradient>
+    <linearGradient id="ridge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9e4dc"/>
+      <stop offset=".3" stop-color="#8c9399"/>
+      <stop offset=".72" stop-color="#59636a"/>
+      <stop offset="1" stop-color="#414c51"/>
+    </linearGradient>
+    <linearGradient id="ridge2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9aa2a5"/>
+      <stop offset="1" stop-color="#43504f"/>
+    </linearGradient>
+    <linearGradient id="meadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7f7c66"/>
+      <stop offset=".4" stop-color="#66654f"/>
+      <stop offset="1" stop-color="#464a3c"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b8aca0"/>
+      <stop offset=".5" stop-color="#93887c"/>
+      <stop offset="1" stop-color="#6f675d"/>
+    </linearGradient>
+    <linearGradient id="timber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4b3b2d"/>
+      <stop offset="1" stop-color="#30261d"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#354642"/>
+      <stop offset="1" stop-color="#20302d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffd79b" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#ffd79b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx=".5" cy=".45" r=".78">
+      <stop offset=".5" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0c1114" stop-opacity=".52"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".06"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <ellipse cx="430" cy="330" rx="420" ry="180" fill="#e8d8c4" opacity=".18" filter="url(#soft)"/>
+
+  <!-- mountains -->
+  <path d="M0 620 L180 420 L300 500 L470 296 L640 480 L780 380 L940 540 L1080 430 L1250 560 L1400 470 L1600 600 L1600 760 L0 760 Z" fill="url(#ridge)" opacity=".95"/>
+  <path d="M0 660 L200 540 L360 610 L540 470 L700 600 L880 520 L1050 640 L1230 550 L1400 640 L1600 570 L1600 820 L0 820 Z" fill="url(#ridge2)"/>
+  <g fill="#f1ece3" opacity=".85">
+    <path d="M470 296 L520 352 L492 344 L470 372 L444 340 L420 348 Z"/>
+    <path d="M1080 430 L1120 486 L1096 474 L1078 500 L1054 472 L1034 484 Z"/>
+    <path d="M780 380 L816 428 L794 420 L776 442 L756 418 L738 426 Z"/>
+  </g>
+
+  <!-- tree line -->
+  <g fill="#2f3a33">
+    <path d="M0 780 L40 700 L70 780 Z"/><path d="M50 790 L100 688 L140 790 Z"/><path d="M120 790 L164 706 L200 790 Z"/>
+    <path d="M1360 782 L1410 690 L1450 782 Z"/><path d="M1420 790 L1470 696 L1520 790 Z"/><path d="M1510 790 L1560 710 L1600 790 Z"/>
+  </g>
+
+  <!-- meadow -->
+  <path d="M0 730 C260 700 520 746 780 726 C1060 704 1320 740 1600 714 L1600 1000 L0 1000 Z" fill="url(#meadow)"/>
+  <g stroke="#7c7a63" stroke-width="1.6" opacity=".35">
+    <path d="M0 830 C300 806 600 846 900 822 C1200 798 1400 836 1600 816"/>
+    <path d="M0 900 C320 876 620 916 940 892 C1240 870 1440 904 1600 886"/>
+  </g>
+
+  <!-- house shadow -->
+  <ellipse cx="800" cy="772" rx="470" ry="38" fill="#24281f" opacity=".4" filter="url(#soft)"/>
+
+  <!-- stone volume left -->
+  <rect x="390" y="548" width="340" height="206" fill="url(#stone)"/>
+  <g stroke="#8d8174" stroke-width="1.4" opacity=".55">
+    <path d="M390 584 H730"/><path d="M390 620 H730"/><path d="M390 656 H730"/><path d="M390 692 H730"/><path d="M390 728 H730"/>
+    <path d="M460 548 V754"/><path d="M530 548 V754"/><path d="M600 548 V754"/><path d="M670 548 V754"/>
+  </g>
+  <rect x="470" y="604" width="92" height="112" fill="url(#glass)"/>
+  <rect x="588" y="618" width="112" height="98" fill="url(#glass)"/>
+  <rect x="478" y="612" width="76" height="96" fill="#b98b52" opacity=".28"/>
+  <rect x="478" y="612" width="6" height="96" fill="#ffd9a0" opacity=".8"/>
+
+  <!-- glass link -->
+  <rect x="730" y="574" width="180" height="180" fill="url(#glass)"/>
+  <g stroke="#1e2a28" stroke-width="3"><path d="M760 574 V754"/><path d="M800 574 V754"/><path d="M840 574 V754"/><path d="M880 574 V754"/></g>
+  <rect x="742" y="602" width="152" height="30" fill="#f0c98f" opacity=".3"/>
+  <circle cx="810" cy="660" r="46" fill="url(#glow)" opacity=".7"/>
+
+  <!-- timber volume right -->
+  <rect x="910" y="536" width="330" height="218" fill="url(#timber)"/>
+  <g stroke="#6b5039" stroke-width="3" opacity=".55">
+    <path d="M926 536 V754"/><path d="M950 536 V754"/><path d="M974 536 V754"/><path d="M998 536 V754"/><path d="M1022 536 V754"/>
+    <path d="M1046 536 V754"/><path d="M1070 536 V754"/><path d="M1094 536 V754"/><path d="M1118 536 V754"/><path d="M1142 536 V754"/>
+    <path d="M1166 536 V754"/><path d="M1190 536 V754"/><path d="M1214 536 V754"/>
+  </g>
+  <rect x="1010" y="612" width="158" height="96" fill="url(#glass)"/>
+  <rect x="1018" y="620" width="142" height="80" fill="#563f2c" opacity=".5"/>
+  <rect x="1036" y="678" width="102" height="14" fill="#3a2c22"/>
+  <circle cx="1088" cy="660" r="22" fill="url(#glow)" opacity=".55"/>
+
+  <!-- deep canopy -->
+  <rect x="360" y="512" width="900" height="30" fill="#3d342a"/>
+  <rect x="360" y="542" width="900" height="10" fill="#26211a"/>
+  <rect x="1180" y="512" width="620" height="18" fill="#3d342a"/>
+
+  <!-- suspended hearth / outdoor room -->
+  <rect x="1190" y="600" width="240" height="150" fill="#2b2620" opacity=".55"/>
+  <g stroke="#3b332a" stroke-width="6"><path d="M1200 604 V750"/><path d="M1420 604 V750"/></g>
+  <rect x="1270" y="664" width="80" height="86" fill="#26221d"/>
+  <ellipse cx="1310" cy="714" rx="32" ry="26" fill="url(#glow)"/>
+  <rect x="1282" y="708" width="56" height="8" fill="#d9a15e"/>
+
+  <!-- terrace -->
+  <rect x="360" y="754" width="1160" height="26" fill="#8f8776"/>
+  <rect x="360" y="780" width="1160" height="10" fill="#655f51"/>
+
+  <!-- planted foreground -->
+  <g fill="#39422f">
+    <ellipse cx="240" cy="804" rx="240" ry="70"/><ellipse cx="1460" cy="820" rx="300" ry="80"/>
+  </g>
+  <g stroke="#7e8266" stroke-width="2" opacity=".7">
+    <path d="M120 860 q-20 -60 -6 -100"/><path d="M150 862 q10 -70 34 -104"/><path d="M180 866 q34 -58 30 -96"/>
+    <path d="M1420 870 q-16 -64 8 -108"/><path d="M1460 872 q20 -66 48 -100"/><path d="M1500 876 q36 -54 34 -94"/>
+  </g>
+
+  <!-- snow specks -->
+  <g fill="#e9e4dc" opacity=".5">
+    <circle cx="300" cy="360" r="2"/><circle cx="700" cy="280" r="2"/><circle cx="900" cy="320" r="1.6"/><circle cx="1180" cy="300" r="2"/><circle cx="540" cy="250" r="1.6"/>
+  </g>
+
+  <rect width="1600" height="1000" fill="url(#vignette)"/>
+  <rect width="1600" height="1000" filter="url(#grain)" opacity=".7"/>
+</svg>

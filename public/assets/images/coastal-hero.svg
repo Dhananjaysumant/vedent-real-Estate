@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Vanguard coastal villa at golden hour</title>
+  <desc id="desc">Stylised architectural rendering of a low modern villa with limestone terraces and an infinity pool overlooking the Pacific.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5d6167"/>
+      <stop offset=".38" stop-color="#a99387"/>
+      <stop offset=".72" stop-color="#e0bfa0"/>
+      <stop offset="1" stop-color="#f2ddc2"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".78" cy=".58" r=".5">
+      <stop offset="0" stop-color="#ffe9c6" stop-opacity=".95"/>
+      <stop offset=".25" stop-color="#f7c894" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#f0b07a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9aa7a1"/>
+      <stop offset=".45" stop-color="#71847f"/>
+      <stop offset="1" stop-color="#4c5f5c"/>
+    </linearGradient>
+    <linearGradient id="pool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a9bdb8"/>
+      <stop offset=".5" stop-color="#7f9c97"/>
+      <stop offset="1" stop-color="#5c7874"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4d5b59"/>
+      <stop offset=".45" stop-color="#6d7c76"/>
+      <stop offset="1" stop-color="#394744"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efe5d3"/>
+      <stop offset="1" stop-color="#cbbda5"/>
+    </linearGradient>
+    <linearGradient id="stoneShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b4a690"/>
+      <stop offset="1" stop-color="#d9cbb4"/>
+    </linearGradient>
+    <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfc1a9"/>
+      <stop offset="1" stop-color="#a99b84"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx=".5" cy=".45" r=".78">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#12100c" stop-opacity=".42"/>
+    </radialGradient>
+    <linearGradient id="refl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e5d3b8" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#e5d3b8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <rect width="1600" height="1000" fill="url(#sun)"/>
+  <circle cx="1240" cy="520" r="34" fill="#ffe4b8" opacity=".75" filter="url(#soft)"/>
+
+  <!-- distant coastline -->
+  <path d="M0 560 L190 520 L300 548 L470 512 L640 552 L780 534 L940 556 L1100 540 L1290 560 L1450 532 L1600 556 L1600 610 L0 610 Z" fill="#8d8a7d" opacity=".55"/>
+  <path d="M960 545 C1080 512 1180 522 1270 545 L1320 560 L1600 560 L1600 640 L980 640 Z" fill="#5e6058" opacity=".8"/>
+
+  <!-- ocean -->
+  <rect y="585" width="1600" height="415" fill="url(#ocean)"/>
+  <g opacity=".5" stroke="#d8cab2" stroke-width="1.2">
+    <path d="M0 640 H1600"/><path d="M0 668 H1600" opacity=".7"/><path d="M0 704 H1600" opacity=".5"/>
+    <path d="M0 752 H1600" opacity=".35"/><path d="M0 812 H1600" opacity=".25"/>
+  </g>
+  <ellipse cx="1200" cy="640" rx="330" ry="26" fill="#f6ddb9" opacity=".28" filter="url(#soft)"/>
+
+  <!-- far headland -->
+  <path d="M0 620 C90 580 190 582 260 610 L300 1000 L0 1000 Z" fill="#3f4a44" opacity=".9"/>
+  <path d="M0 650 C80 616 160 616 230 646 L260 1000 L0 1000 Z" fill="#33403b"/>
+
+  <!-- ground / terrace -->
+  <path d="M240 700 L1290 690 L1600 1000 L120 1000 Z" fill="url(#deck)"/>
+
+  <!-- villa shadow -->
+  <ellipse cx="760" cy="742" rx="470" ry="46" fill="#4d4539" opacity=".28" filter="url(#soft)"/>
+
+  <!-- lower glass pavilion -->
+  <rect x="360" y="560" width="720" height="148" fill="#2e3835"/>
+  <rect x="368" y="568" width="704" height="132" fill="url(#glass)"/>
+  <g fill="#f3d9ad" opacity=".82">
+    <rect x="392" y="596" width="116" height="84" rx="1"/>
+    <rect x="640" y="604" width="74" height="78" rx="1" opacity=".9"/>
+  </g>
+  <g stroke="#2c3633" stroke-width="5">
+    <path d="M376 568 V700"/><path d="M500 568 V700"/><path d="M628 568 V700"/><path d="M760 568 V700"/><path d="M892 568 V700"/><path d="M1020 568 V700"/><path d="M1064 568 V700"/>
+  </g>
+  <!-- interior hints -->
+  <rect x="520" y="642" width="160" height="36" fill="#8d7a63" opacity=".7"/>
+  <rect x="700" y="624" width="9" height="76" fill="#d9c39d" opacity=".55"/>
+  <circle cx="704" cy="620" r="13" fill="#f5d9a4" opacity=".6"/>
+  <g stroke="#d8c3a0" stroke-width="2" opacity=".35"><path d="M392 596 L508 680"/><path d="M640 604 L714 682"/></g>
+
+  <!-- roof slab / overhang -->
+  <rect x="330" y="528" width="790" height="38" fill="#efe5d2"/>
+  <rect x="330" y="566" width="790" height="12" fill="#b9ab93"/>
+  <rect x="330" y="528" width="790" height="8" fill="#fff6e5"/>
+
+  <!-- cantilevered upper volume -->
+  <rect x="660" y="404" width="430" height="128" fill="url(#stone)"/>
+  <rect x="660" y="404" width="96" height="128" fill="url(#stoneShade)"/>
+  <rect x="756" y="424" width="286" height="90" fill="url(#glass)"/>
+  <g stroke="#4a5652" stroke-width="3.5"><path d="M828 424 V514"/><path d="M900 424 V514"/><path d="M972 424 V514"/></g>
+  <rect x="660" y="388" width="452" height="20" fill="#f3ead9"/>
+  <rect x="660" y="408" width="452" height="6" fill="#c8b99f"/>
+  <!-- timber slats on upper left face -->
+  <g stroke="#a37c50" stroke-width="3" opacity=".8">
+    <path d="M672 420 V524"/><path d="M688 420 V524"/><path d="M704 420 V524"/><path d="M720 420 V524"/><path d="M736 420 V524"/>
+  </g>
+
+  <!-- roof garden / upper terrace -->
+  <rect x="700" y="376" width="380" height="12" fill="#cdbfa6"/>
+  <g fill="#5f6c58" opacity=".85">
+    <ellipse cx="746" cy="372" rx="24" ry="16"/><ellipse cx="786" cy="374" rx="17" ry="12"/><ellipse cx="1060" cy="370" rx="28" ry="17"/>
+  </g>
+
+  <!-- stone core -->
+  <rect x="1058" y="470" width="62" height="230" fill="#cfc2ab"/>
+  <rect x="1058" y="470" width="18" height="230" fill="#ece0cc"/>
+  <g stroke="#b6a88f" stroke-width="1.5" opacity=".8">
+    <path d="M1062 512 H1118"/><path d="M1062 556 H1118"/><path d="M1062 600 H1118"/><path d="M1062 644 H1118"/>
+  </g>
+
+  <!-- infinity pool -->
+  <path d="M620 782 L1250 764 L1380 1000 L560 1000 Z" fill="#3e5350"/>
+  <path d="M638 790 L1234 773 L1350 986 L590 986 Z" fill="url(#pool)"/>
+  <path d="M638 790 L1234 773 L1350 986 L590 986 Z" fill="url(#refl)"/>
+  <g stroke="#e8d3b0" stroke-width="1.4" opacity=".3">
+    <path d="M660 820 H1300"/><path d="M676 858 H1320"/><path d="M700 906 H1330"/><path d="M730 956 H1340"/>
+  </g>
+  <rect x="620" y="776" width="620" height="10" fill="#e9deca"/>
+  <!-- reflections of villa -->
+  <g opacity=".18" fill="#f7ecd8">
+    <rect x="700" y="796" width="300" height="46"/><rect x="560" y="812" width="120" height="34"/>
+  </g>
+
+  <!-- stepping stones -->
+  <g fill="#d9ccb5">
+    <path d="M300 800 L430 790 L446 826 L310 838 Z"/>
+    <path d="M250 870 L390 860 L402 900 L262 912 Z"/>
+    <path d="M200 950 L350 938 L360 986 L210 996 Z"/>
+  </g>
+
+  <!-- foreground planting -->
+  <g fill="#3c4739">
+    <path d="M0 1000 C40 900 110 862 180 880 C240 896 280 940 300 1000 Z" opacity=".9"/>
+    <path d="M1380 1000 C1390 900 1450 846 1540 856 C1580 861 1600 900 1600 1000 Z"/>
+  </g>
+  <g stroke="#2f3a2d" stroke-width="4" fill="none" opacity=".9">
+    <path d="M1420 1000 V840"/><path d="M1470 1000 V812"/><path d="M1520 1000 V860"/>
+    <path d="M1420 870 q-40 -26 -56 -64"/><path d="M1470 842 q44 -30 54 -76"/><path d="M1520 886 q40 -22 52 -60"/>
+  </g>
+
+  <!-- birds -->
+  <g stroke="#4f4a41" stroke-width="2" fill="none" opacity=".55">
+    <path d="M620 336 q10 -8 20 0 q10 -8 20 0"/><path d="M690 312 q8 -6 16 0 q8 -6 16 0"/><path d="M570 372 q7 -5 14 0 q7 -5 14 0"/>
+  </g>
+
+  <rect width="1600" height="1000" fill="url(#vignette)"/>
+  <rect width="1600" height="1000" filter="url(#grain)" opacity=".7"/>
+</svg>

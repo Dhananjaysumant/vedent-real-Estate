@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">The infinity terrace at dusk</title>
+  <desc id="desc">Stylised dusk view across a dark infinity pool towards a warmly lit contemporary villa and the ocean horizon.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#242a33"/>
+      <stop offset=".42" stop-color="#5a5a5f"/>
+      <stop offset=".68" stop-color="#a98b7c"/>
+      <stop offset=".86" stop-color="#d9b391"/>
+      <stop offset="1" stop-color="#e9cbaa"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7e8b86"/>
+      <stop offset=".35" stop-color="#56655f"/>
+      <stop offset="1" stop-color="#1d2b28"/>
+    </linearGradient>
+    <linearGradient id="pool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#425a58"/>
+      <stop offset=".5" stop-color="#233a39"/>
+      <stop offset="1" stop-color="#122322"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#33423f"/>
+      <stop offset="1" stop-color="#14201e"/>
+    </linearGradient>
+    <radialGradient id="warm" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffd79c" stop-opacity=".95"/>
+      <stop offset=".55" stop-color="#f0ab63" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#f0ab63" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx=".5" cy=".45" r=".8">
+      <stop offset=".45" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#070d0c" stop-opacity=".6"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="ripple"><feTurbulence type="fractalNoise" baseFrequency=".02 .12" numOctaves="2" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="8"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".06"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1300" cy="596" r="34" fill="#ffddaa" opacity=".55" filter="url(#soft)"/>
+  <g stroke="#d3b191" stroke-width="1.5" opacity=".25">
+    <path d="M0 300 H1600"/><path d="M0 360 H1600"/><path d="M0 428 H1600"/>
+  </g>
+
+  <!-- ocean -->
+  <rect y="650" width="1600" height="160" fill="url(#water)"/>
+  <g stroke="#dcc2a0" stroke-width="1.4" opacity=".25">
+    <path d="M0 676 H1600"/><path d="M0 704 H1600"/><path d="M0 742 H1600"/><path d="M0 786 H1600"/>
+  </g>
+  <ellipse cx="1290" cy="664" rx="280" ry="18" fill="#f4d3a8" opacity=".28" filter="url(#soft)"/>
+
+  <!-- headland silhouette -->
+  <path d="M0 660 C90 610 220 606 320 640 L340 800 L0 800 Z" fill="#1c2521" opacity=".9"/>
+
+  <!-- villa silhouette -->
+  <rect x="430" y="520" width="740" height="180" fill="#202823"/>
+  <rect x="430" y="504" width="760" height="20" fill="#2b332c"/>
+  <rect x="700" y="402" width="400" height="110" fill="#262d27"/>
+  <rect x="700" y="388" width="420" height="18" fill="#333a31"/>
+  <!-- glowing interiors -->
+  <g fill="#ffcb8b">
+    <rect x="470" y="560" width="150" height="96" opacity=".72"/>
+    <rect x="680" y="548" width="90" height="108" opacity=".55"/>
+    <rect x="838" y="560" width="150" height="96" opacity=".78"/>
+    <rect x="1030" y="566" width="90" height="90" opacity=".4"/>
+    <rect x="744" y="436" width="140" height="54" opacity=".62"/>
+    <rect x="934" y="436" width="110" height="54" opacity=".5"/>
+  </g>
+  <g fill="#171e1a">
+    <rect x="520" y="548" width="8" height="120"/><rect x="600" y="548" width="8" height="120"/><rect x="700" y="548" width="8" height="120"/>
+    <rect x="820" y="548" width="8" height="120"/><rect x="900" y="548" width="8" height="120"/><rect x="988" y="548" width="8" height="120"/>
+    <rect x="780" y="426" width="6" height="76"/><rect x="860" y="426" width="6" height="76"/><rect x="960" y="426" width="6" height="76"/><rect x="1030" y="426" width="6" height="76"/>
+  </g>
+  <ellipse cx="900" cy="600" rx="380" ry="150" fill="url(#warm)" opacity=".35"/>
+
+  <!-- trees -->
+  <g fill="#18211c">
+    <path d="M300 700 L340 540 L380 700 Z"/><path d="M340 710 L382 520 L426 710 Z"/>
+    <path d="M1220 700 L1260 546 L1300 700 Z"/><path d="M1270 710 L1310 530 L1352 710 Z"/>
+    <path d="M1400 720 L1440 580 L1480 720 Z"/>
+  </g>
+
+  <!-- terrace -->
+  <path d="M180 700 L1420 692 L1600 1000 L0 1000 Z" fill="#3f4239"/>
+  <path d="M180 700 L1420 692 L1432 730 L170 738 Z" fill="#8b8778"/>
+
+  <!-- pool -->
+  <path d="M280 764 L1380 748 L1510 1000 L160 1000 Z" fill="#0e1a18"/>
+  <path d="M296 774 L1362 759 L1470 982 L190 982 Z" fill="url(#pool)"/>
+  <g filter="url(#ripple)" opacity=".8">
+    <ellipse cx="800" cy="830" rx="330" ry="26" fill="#f6c489" opacity=".25"/>
+    <ellipse cx="800" cy="880" rx="260" ry="18" fill="#ffd59c" opacity=".18"/>
+    <ellipse cx="800" cy="940" rx="200" ry="14" fill="#ffd59c" opacity=".12"/>
+  </g>
+  <g stroke="#d9c6a9" stroke-width="1.4" opacity=".3">
+    <path d="M330 812 H1350"/><path d="M360 850 H1370"/><path d="M400 896 H1400"/><path d="M450 946 H1450"/>
+  </g>
+  <rect x="280" y="758" width="1100" height="12" fill="#d6c9b2"/>
+  <rect x="280" y="770" width="1100" height="6" fill="#a99c85"/>
+
+  <!-- lounge chairs -->
+  <g fill="#22251f">
+    <path d="M1160 756 L1260 748 L1300 776 L1190 786 Z"/><path d="M1250 748 L1320 742 L1340 762 L1290 768 Z"/>
+    <path d="M960 760 L1050 754 L1088 780 L990 788 Z"/>
+  </g>
+
+  <!-- landscape lights -->
+  <g fill="#ffd39a">
+    <circle cx="300" cy="716" r="3.5"/><circle cx="480" cy="712" r="3.5"/><circle cx="1120" cy="706" r="3.5"/><circle cx="1300" cy="704" r="3.5"/>
+    <circle cx="380" cy="742" r="2.5" opacity=".8"/><circle cx="1200" cy="736" r="2.5" opacity=".8"/>
+  </g>
+  <ellipse cx="1200" cy="742" rx="120" ry="26" fill="url(#warm)" opacity=".35"/>
+
+  <!-- foreground planting -->
+  <path d="M0 1000 C40 920 120 890 220 918 C260 930 280 966 290 1000 Z" fill="#101a14"/>
+  <path d="M1600 1000 C1560 900 1480 872 1400 900 C1360 914 1340 956 1330 1000 Z" fill="#0f1913"/>
+  <g stroke="#1d2a20" stroke-width="4" fill="none">
+    <path d="M160 1000 V900"/><path d="M210 1000 V920"/><path d="M1440 1000 V890"/><path d="M1500 1000 V920"/>
+  </g>
+
+  <rect width="1600" height="1000" fill="url(#vignette)"/>
+  <rect width="1600" height="1000" filter="url(#grain)" opacity=".7"/>
+</svg>
